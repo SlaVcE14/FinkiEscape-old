@@ -31,12 +31,8 @@ namespace FinkiEscapa
             Controls.Add(credits);
 
 
-
         }
 
-        private void MainScene_Load(object sender, EventArgs e)
-        {
 
-        }
     }
 }

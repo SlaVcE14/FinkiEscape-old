@@ -59,7 +59,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Name = "HowToPlayScene";
-            this.Size = new System.Drawing.Size(1150, 700);
+            this.Size = new System.Drawing.Size(1150, 660);
             this.ResumeLayout(false);
             this.PerformLayout();
 
