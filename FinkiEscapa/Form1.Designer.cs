@@ -37,7 +37,6 @@
             this.ClientSize = new System.Drawing.Size(1134, 656);
             this.Name = "MainScene";
             this.Text = "Finki Escape";
-            this.Load += new System.EventHandler(this.MainScene_Load);
             this.ResumeLayout(false);
 
         }
