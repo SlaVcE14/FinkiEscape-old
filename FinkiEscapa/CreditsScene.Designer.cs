@@ -77,7 +77,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Name = "CreditsScene";
-            this.Size = new System.Drawing.Size(1150, 700);
+            this.Size = new System.Drawing.Size(1150, 660);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CreditsScene_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
