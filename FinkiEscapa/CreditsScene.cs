@@ -34,5 +34,13 @@ namespace FinkiEscapa
             Visible = false;
             main.mainMenu.Visible = true;
         }
+
+        private void CreditsScene_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                goBack();
+            }
+        }
     }
 }
