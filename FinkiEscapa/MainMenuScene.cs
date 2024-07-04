@@ -22,17 +22,24 @@ namespace FinkiEscapa
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void howToPlayBtn_Click(object sender, EventArgs e)
         {
             Visible = false;
             main.howToPlay.Visible = true;
             
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void creditsBtn_Click(object sender, EventArgs e)
         {
             Visible = false;
             main.credits.Visible = true;
+        }
+
+        private void playBtn_Click(object sender, EventArgs e)
+        {
+            main.Hide();
+            GameForm form = new GameForm();
+            form.Show();
         }
     }
 }

@@ -28,57 +28,58 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.playBtn = new System.Windows.Forms.Button();
+            this.howToPlayBtn = new System.Windows.Forms.Button();
+            this.creditsBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // playBtn
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.Desktop;
-            this.button1.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(409, 183);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(276, 59);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "ИГРАЈ";
-            this.button1.UseVisualStyleBackColor = false;
+            this.playBtn.BackColor = System.Drawing.SystemColors.Desktop;
+            this.playBtn.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.playBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.playBtn.Location = new System.Drawing.Point(409, 183);
+            this.playBtn.Name = "playBtn";
+            this.playBtn.Size = new System.Drawing.Size(276, 59);
+            this.playBtn.TabIndex = 0;
+            this.playBtn.Text = "ИГРАЈ";
+            this.playBtn.UseVisualStyleBackColor = false;
+            this.playBtn.Click += new System.EventHandler(this.playBtn_Click);
             // 
-            // button2
+            // howToPlayBtn
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.Desktop;
-            this.button2.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button2.Location = new System.Drawing.Point(407, 299);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(277, 64);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "КАКО СЕ ИГРА?";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.howToPlayBtn.BackColor = System.Drawing.SystemColors.Desktop;
+            this.howToPlayBtn.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.howToPlayBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.howToPlayBtn.Location = new System.Drawing.Point(407, 299);
+            this.howToPlayBtn.Name = "howToPlayBtn";
+            this.howToPlayBtn.Size = new System.Drawing.Size(277, 64);
+            this.howToPlayBtn.TabIndex = 1;
+            this.howToPlayBtn.Text = "КАКО СЕ ИГРА?";
+            this.howToPlayBtn.UseVisualStyleBackColor = false;
+            this.howToPlayBtn.Click += new System.EventHandler(this.howToPlayBtn_Click);
             // 
-            // button3
+            // creditsBtn
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.Desktop;
-            this.button3.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button3.Location = new System.Drawing.Point(407, 418);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(277, 64);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "КРЕДИТИ";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.creditsBtn.BackColor = System.Drawing.SystemColors.Desktop;
+            this.creditsBtn.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.creditsBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.creditsBtn.Location = new System.Drawing.Point(407, 418);
+            this.creditsBtn.Name = "creditsBtn";
+            this.creditsBtn.Size = new System.Drawing.Size(277, 64);
+            this.creditsBtn.TabIndex = 2;
+            this.creditsBtn.Text = "КРЕДИТИ";
+            this.creditsBtn.UseVisualStyleBackColor = false;
+            this.creditsBtn.Click += new System.EventHandler(this.creditsBtn_Click);
             // 
             // MainMenuScene
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.creditsBtn);
+            this.Controls.Add(this.howToPlayBtn);
+            this.Controls.Add(this.playBtn);
             this.Name = "MainMenuScene";
             this.Size = new System.Drawing.Size(1150, 660);
             this.ResumeLayout(false);
@@ -87,8 +88,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button playBtn;
+        private System.Windows.Forms.Button howToPlayBtn;
+        private System.Windows.Forms.Button creditsBtn;
     }
 }
