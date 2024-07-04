@@ -21,6 +21,9 @@ namespace FinkiEscapa
         {
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
+
+            
+
             mainMenu = new MainMenuScene(this);
             howToPlay = new HowToPlayScene(this);
             credits = new CreditsScene(this);
@@ -30,9 +33,19 @@ namespace FinkiEscapa
             Controls.Add(howToPlay);
             Controls.Add(credits);
 
-
+            KeyPreview = true;
         }
 
+        private void MainScene_KeyDown(object sender, KeyEventArgs e)
+        {
+            mainMenu.Visible = true;
+            howToPlay.Visible = false;
+            credits.Visible = false;
+        }
 
+        private void MainScene_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

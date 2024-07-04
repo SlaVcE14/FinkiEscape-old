@@ -1,6 +1,6 @@
 ﻿namespace FinkiEscapa
 {
-    partial class MainScene
+    partial class GameForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,22 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
-            // MainScene
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 2000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // GameForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1134, 656);
-            this.Name = "MainScene";
-            this.Text = "Finki Escape";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainScene_FormClosed);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MainScene_KeyDown);
+            this.Name = "GameForm";
+            this.Text = "GameForm";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.GameForm_FormClosed);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.GameForm_KeyDown);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+        private System.Windows.Forms.Timer timer1;
     }
 }
-
